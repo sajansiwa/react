@@ -63,7 +63,7 @@ export const linkStyle = {
     color: 'white',
    }
 
-export const LoginComponent=styled.div`
+export const LoginComponent=styled.form`
     align-items: center;
     align-content: center;
     flex-direction: column;
@@ -100,7 +100,7 @@ export const Inp=styled.input`
     }
 `
 
-export const InputComponent=styled.div`
+export const InputComponent=styled.label`
 display: flex;
 align-content: center;
 flex-direction: column;
@@ -133,4 +133,8 @@ export const Button=styled.button`
     &:hover{
         border-color: whitesmoke;
     }
+`
+
+export const P=styled.p`
+    color: whitesmoke;
 `

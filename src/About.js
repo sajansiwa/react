@@ -1,13 +1,14 @@
 import React from 'react';
 import { Link } from "react-router-dom";
-import {Navi, Flx, Log} from './components/Style';
+import {Navi, Flx, Log, P} from './components/Style';
 import instlogo from './inst.png';
 import flogo from './fb.png';
 import { linkStyle } from "./components/Style";
 
 function About () {
     return(
-        <Flx>   
+        <div>
+        <Flx>     
             <div>
             <Navi><Link to="/" style={linkStyle}><h2>Home</h2></Link></Navi>
             <Navi><Link to="Contact" style={linkStyle}><h2>Contact Us</h2></Link></Navi>
@@ -19,6 +20,7 @@ function About () {
             <Log src={flogo} alt="fblogo"></Log>
             </div>
         </Flx>
+        </div>
     );
 }
 export default About;

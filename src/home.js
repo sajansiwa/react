@@ -1,9 +1,11 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import {Navi, Flx, Log, Para} from './components/Style';
+
+import {Navi, Flx, Log} from './components/Style';
 import instlogo from './inst.png';
 import flogo from './fb.png';
 import { linkStyle } from "./components/Style";
+import  { Navigate } from 'react-router-dom';
 
 
 function Home () {
@@ -25,7 +27,7 @@ function Home () {
         <Flx>
             <p>Welcome to Himalayan coffee where taste meets passion.</p>
         </Flx>
-        </div>
-    );
-}
+        </div>);
+    }
+
 export default Home;
